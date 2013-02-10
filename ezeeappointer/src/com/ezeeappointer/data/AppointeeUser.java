@@ -1,5 +1,7 @@
 package com.ezeeappointer.data;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,8 +15,13 @@ import com.google.appengine.api.datastore.Key;
 
 @Entity
 @Table(name = "APPOINTMENT_USER")
-public class AppointeeUser {
+public class AppointeeUser implements Serializable {
 	
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1515833239703547064L;
 	
 	private String email;
 	private String password;

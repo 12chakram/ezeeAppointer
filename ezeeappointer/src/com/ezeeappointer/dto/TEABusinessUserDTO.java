@@ -3,12 +3,18 @@
  */
 package com.ezeeappointer.dto;
 
+import java.io.Serializable;
+
 /**
  * @author sairam
  *
  */
-public class TEABusinessUserDTO {
+public class TEABusinessUserDTO implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8966342409249834273L;
 	private String userId;
 	private String password;
 	private String cfrmPassword;

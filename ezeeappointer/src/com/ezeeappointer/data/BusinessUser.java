@@ -3,6 +3,8 @@
  */
 package com.ezeeappointer.data;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,7 +19,7 @@ import com.google.appengine.api.datastore.Key;
  */
 @Entity
 @Table(name = "BUSINESS_USER")
-public class BusinessUser {	
+public class BusinessUser implements Serializable{	
 	
 	private String userId;
 	private String password;
